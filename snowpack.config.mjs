@@ -1,6 +1,8 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 export default {
   mount: {
+    // public: { url: '/', static: true },
+    // src: { url: '/dist' },
     /* ... */
   },
   plugins: [
@@ -15,6 +17,8 @@ export default {
     // "bundle": true,
   },
   packageOptions: {
+    "knownEntrypoints": ["styled-components"]
+    // packageLookupFields: ['main'],
     /* ... */
   },
   devOptions: {
@@ -22,5 +26,9 @@ export default {
   },
   buildOptions: {
     /* ... */
+  },
+  alias: {
+    'grommet': 'grommet/dist/es6',
+    // 'grommet-icons': 'grommet-icons/es6'
   },
 };
