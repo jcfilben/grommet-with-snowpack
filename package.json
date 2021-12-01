@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build",
+    "test": "echo \"This template does not include a test runner by default.\" && exit 1",
+    "postinstall": "patch-package"
+  },
+  "devDependencies": {
+    "patch-package": "^6.2.2",
+    "snowpack": "3.8.8"
+  },
+  "dependencies": {
+    "grommet": "^2.19.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.3.3"
+  }
+}
