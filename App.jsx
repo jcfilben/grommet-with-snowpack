@@ -1,18 +1,15 @@
 import React from "react";
-import { Box } from "grommet";
-// import { Add } from "grommet-icons";
-// import { Box } from '/node_modules/grommet/es6/components/Box/index.js'
+import { Box, Grommet, Heading, Paragraph } from "grommet";
+import { Add } from "grommet-icons";
+
 export default function App() {
   return (
-    // <div>here</div>
-    // <div>
-    //   here
-    // <Add />
-    // <Grommet>
-      <Box>inside box</Box>
-    // </Grommet>
-    // </div>
+    <Grommet>
+      <Box>
+        <Heading>Grommet with Snowpack!</Heading>
+        <Paragraph>This is an icon from grommet-icons: </Paragraph>
+        <Add />
+      </Box>
+    </Grommet>
   );
 }
-
-// export default App;
